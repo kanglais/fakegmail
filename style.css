@@ -1,0 +1,27 @@
+body {
+	font-family: serif;
+}
+div.container-fluid {
+	background-color: #C6EAF8;
+}
+div.form-group input#searchbar {
+	width: 40%;
+}
+table {
+	background-color: #EEF1F2;
+}
+table.star {
+	color: yellow;
+}
+a {
+	color: black;
+}
+.mailtabs {
+	color: #ECF0F2;
+}
+.navbar-default {
+	background-color: #C6EAF8;
+}
+#dropdownMenu1 {
+	margin-left: 130;
+}
