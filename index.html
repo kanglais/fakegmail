@@ -10,8 +10,8 @@
 		<div class="container-fluid">
 			<div class="navbar navbar-default">
 				<a href="#" class="navbar-brand">Google</a>
-				 <div class="col-md-4">
-				    <div class="input-group">
+				 <div class="col-md-6">
+				    <div class="input-group" id="search">
 				      <input type="text" class="form-control" placeholder="Search">
 				      <span class="input-group-btn">
 				        <button class="btn btn-default" type="button">
@@ -36,79 +36,70 @@
 				</ul>
 			</div>
 		</div>
-		<div class="container-fluid">
-			<div class="row>">
-				<div class="dropdown">
-					 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					    GMail
-					    <span class="caret"></span>
-					 </button>
-					 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		<nav class="navbar navbar-default">
+		  <div class="container-fluid">
+		  	<ul class="nav navbar-nav navbar-left">
+		  		<li>
+		  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">GMail
+					<span class="sr-only">Toggle navigation</span>
+					</button>
+					 <ul class="dropdown-menu">
 					    <li><a href="#">Gmail</a></li>
 					    <li><a href="#">Contacts</a></li>
 					    <li><a href="#">Tasks</a></li>
 					 </ul>
-				</div>
-				<ul class="list-unstyled list-inline">
-					<li>
-						<div class="dropdown">
-							 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">
-							    <i class="fa fa-square-o"></i>
-							    <span class="caret"></span>
-							 </button>
-							 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							    <li><a href="#">All</a></li>
-							    <li><a href="#">None</a></li>
-							    <li><a href="#">Read</a></li>
-							     <li><a href="#">Unread</a></li>
-							    <li><a href="#">Starred</a></li>
-							    <li><a href="#">Unstarred</a></li>
-							 </ul>
-						</div>
-					</li>
-					<li>
-						 <button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Refresh">
-						    <i class="fa fa-refresh"></i>
+		  		</li>
+		  		<li>
+		  			<div class="dropdown">
+						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">
+						    <i class="fa fa-square-o"></i>
+						    <span class="caret"></span>
+						</button>
+					 	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">All</a></li>
+						    <li><a href="#">None</a></li>
+						    <li><a href="#">Read</a></li>
+						     <li><a href="#">Unread</a></li>
+						    <li><a href="#">Starred</a></li>
+						    <li><a href="#">Unstarred</a></li>
+						 </ul>
+					</div>
+		  		</li>
+		  		<li>
+		  			<button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Refresh"><i class="fa fa-refresh"></i></button>
+		  		</li>
+		  		<li>
+		  			<div class="dropdown">
+		  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">More<span class="caret"></span></button>
+		  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+				    			<li><a href="#">Mark All As Read</a></li>
+				 			</ul>
+					</div>
+		  		</li>
+		  	</ul>
+		  	<ul class="nav navbar-nav navbar-right">
+		  		<li><p>1-5 of 5</p></li>
+		  		<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Newer" disabled="disabled"><i class="fa fa-chevron-left"></i></button></li>
+		  		<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Older"><i class="fa fa-chevron-right"></i></button></li>
+		  		<li>
+		  			<div class="dropdown">
+						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Settings" aria-haspopup="true" aria-expanded="true">
+						   	<i class="fa fa-cog"></i>
+						    <span class="caret"></span>
 						 </button>
-					</li>
-					<li>
-						<div class="dropdown">
-							 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">
-							 	More
-							    <span class="caret"></span>
-							 </button>
-							 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-							    <li><a href="#">Mark All As Read</a></li>
-							 </ul>
-						</div>
-					</li>
-				</ul>
-				<nav class="navbar navbar-default navbar-right">
-					<div class="container-fluid">
-						<ul class="list-unstyled list-inline">
-							<li><p>1-5 of 5</p></li>
-							<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Newer" disabled="disabled"><i class="fa fa-chevron-left"></i></button></li>
-							<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Older"><i class="fa fa-chevron-right"></i></button></li>
-							<li><div class="dropdown">
-									 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Settings" aria-haspopup="true" aria-expanded="true">
-									   	<i class="fa fa-cog"></i>
-									    <span class="caret"></span>
-									 </button>
-									 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									    <li><a href="#">Display</a></li>
-									    <li><a href="#">Configure Inbox</a></li>
-									    <li><a href="#">Settings</a></li>
-									     <li><a href="#">Theme</a></li>
-									    <li><a href="#">Help</a></li>
-									 </ul>
-								</div>
-							</li>
-						</ul>
-					</div>		
-				</nav>
-			</div>
-		</div>
-		<div class="row">
+						 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						    <li><a href="#">Display</a></li>
+						    <li><a href="#">Configure Inbox</a></li>
+						    <li><a href="#">Settings</a></li>
+						     <li><a href="#">Theme</a></li>
+						    <li><a href="#">Help</a></li>
+						 </ul>
+					</div>
+		  		</li>
+		  	</ul>
+		  </div>
+		</nav>
+		<div id="mail">
 			<nav class="col-md-2">
 				<div class="navbar navbar-default navbar-left">
 					<button class="btn btn-default" type="button">Compose</button>
@@ -424,18 +415,18 @@
 				</div>
 			</div>
 		</div>
-			<div>
-				<h6>
-					<strong>0.26 GB of 15 GB used</strong>
-					<u>
-						<strong><a href="#">Terms</a></strong>
-					</u>
-					<u>
-						<strong><a href="#">Privacy</a></strong>
-					</u>
-				</h6>
-			</div>
-			</div>
+		<footer id="bottomBar">
+			<h6>
+				<strong>0.26 GB of 15 GB used</strong>
+				<u>
+					<strong><a href="#">Terms</a></strong>
+				</u>
+				<u>
+					<strong><a href="#">Privacy</a></strong>
+				</u>
+			</h6>
+		</footer>
+		</div>
 		</div>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>

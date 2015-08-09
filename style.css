@@ -25,3 +25,32 @@ a {
 #dropdownMenu1 {
 	margin-left: 130;
 }
+.navbar-default {
+	width: 100%;
+	padding-left: 15px;
+}
+#mail .col-md-2, 
+#mail .col-md-10 {
+	padding: 0;
+}
+.navbar-header {
+	padding-right: 100px;
+}
+.navbar-nav li {
+	padding: 10px;
+}
+#search {
+	margin-left: 200px;
+}
+.navbar-brand {
+	font-size: 25px;
+}
+.navbar {
+	margin-bottom: 0;
+}
+#bottomBar {
+	text-align: center;
+}
+footer {
+	margin-bottom: 0;
+}
