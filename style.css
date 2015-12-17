@@ -7,18 +7,14 @@ div.container-fluid {
 div.form-group input#searchbar {
 	width: 40%;
 }
+table {
+	background-color: #EEF1F2;
+}
+table.star {
+	color: yellow;
+}
 a {
 	color: black;
-}
-.gmail button {
-	background-color: transparent;
-	background-repeat: no-repeat;
-	border: none;
-	cursor: pointer;
-	overflow: hidden;
-	outline: none;
-	font-size: 18px;
-	padding-left: 0;
 }
 .mailtabs {
 	color: #ECF0F2;
@@ -26,8 +22,8 @@ a {
 .navbar-default {
 	background-color: #C6EAF8;
 }
-#dropdownMenu2 {
-	margin-left: 115px;
+#dropdownMenu1 {
+	margin-left: 130;
 }
 .navbar-default {
 	width: 100%;
@@ -46,40 +42,12 @@ a {
 #search {
 	margin-left: 200px;
 	padding-top: 15px;
-	width: 600px;
 }
 .navbar-brand {
 	font-size: 25px;
 }
 .navbar {
 	margin-bottom: 0;
-}
-#oneToFive {
-	margin-top: 10px;
-}
-.chevron1 {
-	padding-right: 0 !important;
-}
-.chevron2 {
-	padding-left: 0 !important;
-}
-#mail {
-	padding: 0;
-
-}
-#content {
-	padding: 0;
-}
-table {
-	padding-right: 0;
-	padding-left: 0;
-	background-color: #EEF1F2;
-}
-table.star {
-	color: yellow;
-}
-td {
-	padding: 10px 10px !important;
 }
 #bottomBar {
 	text-align: center;

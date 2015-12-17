@@ -3,12 +3,12 @@
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>fake gmail dude</title>
 </head>
 	<body>
-		<div class="container-fluid">
-			<div class="navbar navbar-default">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
 				<a href="#" class="navbar-brand">Google</a>
 				 <div class="col-md-6">
 				    <div class="input-group" id="search">
@@ -35,11 +35,11 @@
 					</li>
 				</ul>
 			</div>
-		</div>
+		</nav>
 		<nav class="navbar navbar-default">
 		  <div class="container-fluid">
 		  	<ul class="nav navbar-nav navbar-left">
-		  		<li>
+		  		<li class="gmail">
 		  			<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">GMail
 					<span class="sr-only">Toggle navigation</span>
 					</button>
@@ -51,11 +51,11 @@
 		  		</li>
 		  		<li>
 		  			<div class="dropdown">
-						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">
+						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">
 						    <i class="fa fa-square-o"></i>
 						    <span class="caret"></span>
 						</button>
-					 	<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					 	<ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
 						    <li><a href="#">All</a></li>
 						    <li><a href="#">None</a></li>
 						    <li><a href="#">Read</a></li>
@@ -70,24 +70,32 @@
 		  		</li>
 		  		<li>
 		  			<div class="dropdown">
-		  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true">More<span class="caret"></span></button>
-		  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+		  				<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" data-placement="bottom" title="Select" aria-haspopup="true" aria-expanded="true"> More <span class="caret"></span></button>
+		  					<ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
 				    			<li><a href="#">Mark All As Read</a></li>
 				 			</ul>
 					</div>
 		  		</li>
 		  	</ul>
 		  	<ul class="nav navbar-nav navbar-right">
-		  		<li><p>1-5 of 5</p></li>
-		  		<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Newer" disabled="disabled"><i class="fa fa-chevron-left"></i></button></li>
-		  		<li><button class="btn btn-default" type="button" data-toggle=" tooltip" data-placement="bottom" title="Older"><i class="fa fa-chevron-right"></i></button></li>
+		  		<li id="oneToFive">1-5 of 5</li>
+		  		<li class="chevron1">
+		  			<button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Newer" disabled="disabled">
+		  				<i class="fa fa-chevron-left"></i>
+		  			</button>
+	  			</li>
+		  		<li class="chevron2">
+		  			<button class="btn btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="Older">
+		  				<i class="fa fa-chevron-right"></i>
+	  				</button>
+  				</li>
 		  		<li>
 		  			<div class="dropdown">
-						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown tooltip" data-placement="bottom" title="Settings" aria-haspopup="true" aria-expanded="true">
+						 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown tooltip" data-placement="bottom" title="Settings" aria-haspopup="true" aria-expanded="true">
 						   	<i class="fa fa-cog"></i>
 						    <span class="caret"></span>
 						 </button>
-						 <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+						 <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
 						    <li><a href="#">Display</a></li>
 						    <li><a href="#">Configure Inbox</a></li>
 						    <li><a href="#">Settings</a></li>
@@ -99,8 +107,8 @@
 		  	</ul>
 		  </div>
 		</nav>
-		<div id="mail">
-			<nav class="col-md-2">
+		<div>
+			<nav class="col-md-2" id="mail">
 				<div class="navbar navbar-default navbar-left">
 					<button class="btn btn-default" type="button">Compose</button>
 					<ul class="list-unstyled">
@@ -120,8 +128,8 @@
 					</ul>
 					</div>
 				</nav>
-				<div class="col-md-10">
-					<div class="col-md-4 mailtabs">
+				<div class="col-md-10" id="content">
+					<div class="mailtabs">
 						<ul class="nav nav-tabs" role="tablist">
 							<li class="active"><a href="#inbox" role="tab" data-toggle="tab">Inbox</a></li>
 							<li><a href="#social" role="tab" data-toggle="tab">Social</a></li>
@@ -133,11 +141,9 @@
 							<table class="table table-condensed">
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -152,11 +158,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -171,11 +175,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -190,11 +192,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -209,11 +209,94 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Social Media Site</td>
+									<td>Someone you hate wants to connect!</td>
+									<td>Why not reach out to your childhood bully?</td>
+									<td>7/20/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Matthias Anglicus</td>
+									<td>Something Pretentious and Bougie</td>
+									<td>Here's an email all about why something you like is dumb.</td>
+									<td>17:45</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Chris Brody</td>
+									<td>Coding (and other stuff)</td>
+									<td>Top ten reasons why Chris is a butthead...</td>
+									<td>6:34</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>KC Senie</td>
+									<td>Pics of Dog</td>
+									<td>Here are some pics of the dog we love more than you.</td>
+									<td>7/29/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Spam</td>
+									<td>Shit You Don't Want</td>
+									<td>Shit you don't care about...</td>
+									<td>7/26/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -232,11 +315,9 @@
 							<table class="table table-condensed">
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -251,11 +332,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -270,11 +349,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -289,11 +366,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -307,9 +382,92 @@
 									<td>2/3/13</td>
 								</tr>
 								<tr>
-									<td><div class="checkbox">
-									        <label><input type="checkbox"></label>
-									     </div></td>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star"><i class="fa fa-star-o"></i></td>
+									<td><i class="fa fa-bookmark"></i></td>
+									<td>Instagram!</td>
+									<td>Blah!</td>
+									<td>Why not reach out to your childhood bully?</td>
+									<td>1/1/11</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Facebook</td>
+									<td>Blah blah blah</td>
+									<td>Here's an email all about why something you like is dumb.</td>
+									<td>7/16/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Twitter</td>
+									<td>Blah blah blah</td>
+									<td>Top ten reasons why Chris is a butthead...</td>
+									<td>5/7/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>LinkedIn</td>
+									<td>Blah blah blah</td>
+									<td>Here are some pics of the dog we love more than you.</td>
+									<td>3/4/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Spam</td>
+									<td>Blah blah blah</td>
+									<td>Shit you don't care about...</td>
+									<td>2/3/13</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
 									<td class="star"><i class="fa fa-star-o"></i></td>
 									<td><i class="fa fa-bookmark"></i></td>
 									<td>Instagram!</td>
@@ -323,11 +481,9 @@
 							<table class="table table-condensed">	
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -342,11 +498,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -361,11 +515,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -380,11 +532,9 @@
 								</tr>
 								<tr>
 									<td>
-										<div class="checkbox">
-									        <label>
-									          <input type="checkbox">
-									        </label>
-									     </div>
+								        <label>
+								          <input type="checkbox">
+								        </label>
 									</td>
 									<td class="star">
 										<i class="fa fa-star-o"></i>
@@ -398,9 +548,92 @@
 									<td>2/3/13</td>
 								</tr>
 								<tr>
-									<td><div class="checkbox">
-									        <label><input type="checkbox"></label>
-									     </div></td>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star"><i class="fa fa-star-o"></i></td>
+									<td><i class="fa fa-bookmark"></i></td>
+									<td>Mail</td>
+									<td>Someone you hate wants to connect!</td>
+									<td>Why not reach out to your childhood bully?</td>
+									<td>1/1/11</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Here</td>
+									<td>Something Pretentious and Bougie</td>
+									<td>Here's an email all about why something you like is dumb.</td>
+									<td>7/16/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Is</td>
+									<td>Coding (and other stuff)</td>
+									<td>Top ten reasons why Chris is a butthead...</td>
+									<td>5/7/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Some</td>
+									<td>Pics of Dog</td>
+									<td>Here are some pics of the dog we love more than you.</td>
+									<td>3/4/15</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
+									<td class="star">
+										<i class="fa fa-star-o"></i>
+									</td>
+									<td>
+										<i class="fa fa-bookmark"></i>
+									</td>
+									<td>Business</td>
+									<td>Shit You Don't Want</td>
+									<td>Shit you don't care about...</td>
+									<td>2/3/13</td>
+								</tr>
+								<tr>
+									<td>
+								        <label>
+								          <input type="checkbox">
+								        </label>
+									</td>
 									<td class="star"><i class="fa fa-star-o"></i></td>
 									<td><i class="fa fa-bookmark"></i></td>
 									<td>Mail</td>
